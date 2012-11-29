@@ -15,6 +15,7 @@
     height              : 80%;
     background-color    : #EDF3FE;
     margin-left         : 15%;
+    padding             : 20px;
 }
 
 .header-image {
@@ -43,6 +44,11 @@
     vertical-align      : middle;
     text-align          : center;
     cursor              : pointer;
+    width               : 30%;
+}
+
+.menu-item-active {
+    background          : url(/static/img/navhov.png) no-repeat 50% 80%;
 }
 
 .menu-item-mover {
