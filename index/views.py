@@ -14,3 +14,13 @@ def info(request):
     template = loader.get_template('info.html')
     context = Context({})
     return HttpResponse(template.render(context))
+
+def courses(request):
+    template = loader.get_template('courses.html')
+    context = Context({})
+    return HttpResponse(template.render(context))
+
+def contacts(request):
+    template = loader.get_template('contacts.html')
+    context = Context({})
+    return HttpResponse(template.render(context))

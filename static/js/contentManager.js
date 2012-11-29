@@ -9,20 +9,24 @@ cManager.prototype	= {
 			$('#content').html(data);
 		});
 	},
-	activateSchools	: function(){
+	activateCourses	: function(){
 		this.removeActive();
-		this.setActive('schools');
-		$('#content').html('scools');
+		this.setActive('courses');
+		var content		= $.ajax('courses').done(function(data){
+			$('#content').html(data);
+		});
 	},
-	activateTools	: function(){
+	activateContacts: function(){
 		this.removeActive();
-		this.setActive('tools');
-		$('#content').html('tools');
+		this.setActive('contacts');
+		var content		= $.ajax('contacts').done(function(data){
+			$('#content').html(data);
+		});
 	},
 	removeActive	: function(){
 		$('#chapter-info').removeClass('menu-item-active');
-		$('#chapter-schools').removeClass('menu-item-active');
-		$('#chapter-tools').removeClass('menu-item-active');
+		$('#chapter-courses').removeClass('menu-item-active');
+		$('#chapter-contacts').removeClass('menu-item-active');
 	},
 	setActive		: function(chapter){
 		$('#chapter-'+chapter).addClass('menu-item-active');

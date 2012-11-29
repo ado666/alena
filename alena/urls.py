@@ -8,7 +8,9 @@ from django.conf.urls import patterns, include, url
 urlpatterns = patterns('',
     url(r'index', 'index.views.index'),
 
-    url(r'info', 'index.views.info')
+    url(r'info', 'index.views.info'),
+    url(r'courses', 'index.views.courses'),
+    url(r'contacts', 'index.views.contacts'),
     # Examples:
     # url(r'^$', 'alena.views.home', name='home'),
     # url(r'^alena/', include('alena.foo.urls')),
