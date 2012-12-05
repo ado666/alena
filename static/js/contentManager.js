@@ -1,5 +1,4 @@
-cManager			= function(){
-};
+cManager			= function(){};
 
 cManager.prototype	= {
 	activateInfo	: function(){

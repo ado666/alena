@@ -6,27 +6,21 @@
 
 .header {
     width               : 100%;
-    height              : 20%;
-    background-color    : #417690;
-}
-
-.content {
-    width               : 70%;
-    height              : 80%;
-    background-color    : #EDF3FE;
-    margin-left         : 15%;
-    padding             : 20px;
+    height              : 30%;
+    /*background-color    : #417690;*/
 }
 
 .header-image {
     width               : 100%;
-    height              : 75%;
+    height              : 85%;
+    background          : url('/static/img/logo.png') no-repeat 50% 0%;
+    text-align          : center;
     vertical-align      : middle;
 }
 
 .header-menu-bg {
     width               : 100%;
-    height              : 25%;
+    height              : 15%;
     background-color    : #993333;
 }
 
@@ -45,6 +39,43 @@
     text-align          : center;
     cursor              : pointer;
     width               : 30%;
+}
+
+
+.content {
+    width               : 70%;
+    min-height          : 500px;
+    /*height              : 80%;*/
+    background-color    : #EDF3FE;
+    margin-left         : 15%;
+    padding             : 20px;
+}
+
+.content-info {
+    text-align          : center;
+}
+
+.content-courses {
+
+}
+
+.content-contacts {
+}
+
+/*.info {*/
+    /*text-align          : left;*/
+    /*float               : none;*/
+    /*width               : 100%;*/
+    /*height              : 100%;*/
+/*}*/
+
+.info-description {
+    float               : left;
+}
+
+.info-map {
+    position            : relative;
+    float               : right;
 }
 
 .menu-item-active {
