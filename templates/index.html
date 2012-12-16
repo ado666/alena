@@ -1,12 +1,24 @@
 <html>
 <head>
     <title>Site</title>
-    {% include "includes/css_includes.html" %}
-    {% include "includes/js_includes.html" %}
+    <LINK rel="stylesheet" type="text/css" href="/static/css/main.css" >
+    <script type="text/javascript" src="static/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="static/js/contentManager.js"></script>
+    <script type="text/javascript" src="static/js/main.js"></script>
+    <!--{% include "includes/css_includes.html" %}-->
+    <!--{% include "includes/js_includes.html" %}-->
 </head>
 <body class="body">
     <div id="header" class="header">
-        {% include "header.html" %}
+        <!--{% include "header.html" %}-->
+        <div id="top_header" class="header-image"></div>
+        <div class="header-menu-bg">
+            <div class="header-line">
+                <span id="chapter-info" class="menu-item"><b>О нас</b></span>
+                <span id="chapter-courses" class="menu-item"><b>Подбор курсов</b></span>
+                <span id="chapter-contacts" class="menu-item"><b>Контакты</b></span>
+            </div>
+        </div>
     </div>
     <div id="content" class="content">
         <!--{% include "content.html" %}-->
